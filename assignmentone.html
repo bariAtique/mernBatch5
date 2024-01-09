@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bootstrap</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+ <!-- nav bar -->
+ <nav class="navbar navbar-expand-md navbar-dark bg-dark shadow">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">🔠</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggle" >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    
+    <div class="collapse navbar-collapse" id="navbarToggle">
+      
+      <!-- item for nav bar -->
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Contact Me</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+
+  </div>
+  
+</nav>
+ 
+ <!-- banner -->
+ <main>
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active c-item">
+        <img src="image/a1.jpg" class="d-block w-100 c-img" alt="...">
+      </div>
+      <div class="carousel-item c-item">
+        <img src="image/a2.jpg" class="d-block w-100 c-img" alt="...">
+      </div>
+      <div class="carousel-item c-item">
+        <img src="image/a3.jpg" class="d-block w-100 c-img" alt="...">
+      </div>
+    </div>
+  </div>
+ </main>
+
+
+<!-- form card -->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-6">
+      <div>
+        <label for="ageInput">Enter your age:</label>
+        <input type="number" id="ageInput" min="0">
+        <button onclick="checkAge()">Check Age</button>
+      </div>
+      
+      <div id="resultCard" class="card" style="display: none;"></div>
+
+      <!-- input area end -->
+
+    </div> <!--this is for dividing the whole page into 2-->
+    <div class="col-6">
+      <div class="row"> <!--this brings the element in same row-->
+        <div class="col-md-6">
+          <div class="card">
+            <img class="card-img-top" src="https://placehold.co/600x400" alt="">
+            <div class="card-body"></div>
+            <h5 class="card-title">Adult</h5>
+            <p class="card-text">Now I'm older than 18 years.</p>
+          </div>
+        </div>
+  
+        <div class="col-md-6">
+          <div class="card w">
+            <img class="img1" src="https://placehold.co/600x400" alt="">
+            <!-- <div class="card-body"></div>
+            <h5 class="card-title">childd</h5>
+            <p class="card-text">Now I'm between 1-18  years.</p> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 2nd card -->
+</div>
+<!--input card field  -->
+
+  <!-- footer -->
+  <div class="footer">
+    <p>all rights preserved by: --</p><br>
+    <p>Md Atiqul Bari</p>
+
+  </div>
+
+
+  <script src="js/bootstrap.bundle.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
